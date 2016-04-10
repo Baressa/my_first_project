@@ -1,0 +1,16 @@
+%h1 СТАТЬИ index.haml
+
+
+%table
+	= @articles.each do |article|
+		%tr
+			%td
+				= article.title
+			%td
+				= article.text
+			%td
+				= article.created_at.strftime("%d.%m.%Y")
+		-# %td
+		-# 	-# = article.image_tag painting.image_url
+		-# %td
+		-# 	-# = article.text
