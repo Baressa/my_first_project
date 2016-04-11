@@ -2,11 +2,20 @@
 	%strong Title:
 	= @article.title
 
-
 %p
-	%strong Title:
+	%strong text:
 	= @article.text
 
 %p
-	%strong Title:
+	%strong create:
 	= @article.created_at
+
+%p
+	%strong img:
+	%div
+		= image_tag @article.image.url
+
+%p
+	%strong image_thumb:
+	%div
+		= image_tag @article.image_thumb.url
