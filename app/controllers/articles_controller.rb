@@ -14,14 +14,13 @@ class ArticlesController < ApplicationController
 
 	def create
 		@article = Article.new(article_params)
-
-		@article.save
+		@article.save!
 		redirect_to @article
 	end
 
 	private
 		def article_params
-			params.require(:article).permit(:title, :text, {image: []})
+			params.require(:article).permit(:title, :text, :image)
 		end
 
 end
