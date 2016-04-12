@@ -34,9 +34,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'paperclip'
+gem "refile", require: "refile/rails"
+gem "refile-mini_magick"
 gem 'haml'
 gem 'friendly_id'
+gem 'rspec-rails'
+gem "factory_girl_rails"
+gem 'simplecov', :require => false, :group => :test
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

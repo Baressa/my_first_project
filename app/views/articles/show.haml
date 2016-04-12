@@ -13,9 +13,9 @@
 %p
 	%strong img:
 	%div
-		= image_tag @article.image.url
+		= image_tag attachment_url(@article, :image, format: "jpg")
 
 %p
 	%strong image_thumb:
 	%div
-		= image_tag @article.image_thumb.url
+		= image_tag attachment_url(@article, :image_thumb, format: "jpg")

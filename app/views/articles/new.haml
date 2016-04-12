@@ -1,7 +1,7 @@
 %h1 добавить статью
 
 
-= form_for :article, url: articles_path, html: { multipart: true } do |f|
+= form_for @article, url: articles_path do |f|
 	%p
 		= f.label :title
 		%br
@@ -15,12 +15,12 @@
 	%p
 		= f.label :image
 		%br
-		= f.file_field :image
+		= f.attachment_field :image
 
 	%p
 		= f.label :image_thumb
 		%br
-		= f.file_field :image_thumb
+		= f.attachment_field :image_thumb
 
 
 	%p
