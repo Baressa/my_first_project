@@ -1,4 +1,4 @@
-class ArticlesController < ApplicationController
+class Web::ArticlesController < WebController
 
 	def index
 		@articles = Article.all
@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
 	def create
 		@article = Article.new(article_params)
 		@article.save!
-		redirect_to @article
+		redirect_to [:web, @article]
 	end
 
 	private

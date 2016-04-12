@@ -15,7 +15,7 @@
 			%td
 				= image_tag attachment_url(article, :image_thumb, :fill, 500, 150, format: "jpg")
 			%td
-				= link_to 'Show', article_path(article)
+				= link_to 'Show', [:web, article]
 		-# %td
 		-# 	-# = article.image_tag painting.image_url
 		-# %td

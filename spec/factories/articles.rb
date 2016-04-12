@@ -1,3 +1,4 @@
+
 FactoryGirl.define do
   factory :article do
     title "Test tittle"

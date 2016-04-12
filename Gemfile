@@ -41,6 +41,7 @@ gem 'friendly_id'
 gem 'rspec-rails'
 gem "factory_girl_rails"
 gem 'simplecov', :require => false, :group => :test
+gem 'simple_form'
 
 
 group :development, :test do
