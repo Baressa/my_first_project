@@ -1,7 +1,7 @@
 class Web::ArticlesController < WebController
-
+	
 	def index
-		@articles = Article.all
+		@articles = Article.page params[:page]
 	end
 
 	def show

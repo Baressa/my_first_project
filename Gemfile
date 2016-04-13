@@ -42,6 +42,7 @@ gem 'rspec-rails'
 gem "factory_girl_rails"
 gem 'simplecov', :require => false, :group => :test
 gem 'simple_form'
+gem 'kaminari'
 
 
 group :development, :test do
