@@ -1,7 +1,7 @@
 %h1 АКЦИИ index.haml
 
 %table
-	= @stocks.each do |stock|
+	- @stocks.each do |stock|
 		%tr
 			%td
 				= stock.title

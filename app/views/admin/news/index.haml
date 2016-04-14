@@ -3,7 +3,7 @@
 = link_to 'Добавить новость', controller: 'admin/news', action: 'new'
 
 %table
-  = @news.each do |new_item|
+  - @news.each do |new_item|
     %tr
       %td
         = new_item.title

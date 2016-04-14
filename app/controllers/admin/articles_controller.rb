@@ -1,5 +1,7 @@
 class Admin::ArticlesController < AdminController
 
+  http_basic_authenticate_with name: "admin", password: "admin", only: :destroy
+
   def index
     @articles = Article.page params[:page]
   end
@@ -27,6 +29,13 @@ class Admin::ArticlesController < AdminController
     else
       render 'edit'
     end
+  end
+
+  def destroy
+    @article = Article.friendly.find(params[:id])
+    @article.destroy
+
+    redirect_to action: 'index'
   end
 
   private
