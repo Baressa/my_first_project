@@ -4,9 +4,10 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+
 
   scope :module => 'web' do
+    root 'welcome#index'
     resources :articles, only: [:index, :show]
     resources :news, only: [:index, :show]
     resources :stocks, only: [:index, :show]

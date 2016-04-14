@@ -1,4 +1,4 @@
-class Web::NewsController < WebController
+class Web::NewsController < Web::ApplicationController
 
   def index
     @news = New.page params[:page]

@@ -1,0 +1,111 @@
+%section
+  %h1 ПРИГЛАШАЕМ ВАС НА УНИКАЛЬНУЮ И ЭФФЕКТИВНУЮ МЕТОДИКУ ПОХУДЕНИЯ В КЛИНИКУ ОРИГИТЕЯ!
+  %div
+    %p
+      МАРИЯТ МУХИНА
+      %span
+        главный доктор клиник Оригитея,
+        %br
+        автор метода «Золотая игла».
+
+
+%section
+  %h2
+    ПРИЕМЫ  ДОКТОРА МУХИНОЙ
+  %div
+    - 4.times do
+      %div
+        %div
+          -# = image_tag("/images/")
+          %p
+            МОСКВА
+            %span
+              24 ЯНВАРЯ
+        %p
+          КЛИНИКА ОРИГИТЕЯ-САНКТ-ПЕТЕРБУРГ, БЛОХИНА, 8, ЛИТЕР "А"
+        %button
+          ЗАПИСАТЬСЯ
+
+
+%section
+  %h2
+    тут типо слайдер с акциями
+
+  - 10.times do
+    %div
+      Типо слайд
+
+
+%section
+  %h2
+    НОВОСТИ
+  %div
+    - 4.times do
+      -# = image_tag("/images/")
+      %p
+        ДОКТОР МЕДИЦИНСКИХ НАУК, ДИЕТОЛОГ МАРИЯТ МУХИНА...
+      %p
+        Lorem ipsum...
+      %p
+        8.12.2015
+
+
+%section
+  %h2
+    С ЧЕГО НАЧАТЬ
+  %div
+    %div
+      = image_tag("forstart/apple.svg")
+      %p
+        Хочу снизить вес, но не
+        %br
+        получается держать диету
+
+    %div
+      = image_tag("forstart/hours.svg")
+      %p
+        Хочу снизить вес, но не
+        %br
+        хватает времени
+
+    %div
+      = image_tag("forstart/morkov.svg")
+      %p
+        Я хочу снизить вес, но не
+        %br
+        знаю с чего начать
+
+    %div
+      = image_tag("forstart/telo.svg")
+      %p
+        Как убрать лишний жир в
+        %br
+        области живота, бедер?
+
+
+
+
+= link_to 'Статьи', :articles
+
+= link_to 'Новости', controller: 'web/news'
+
+= link_to 'Акции', :stocks
+
+
+
+
+%table
+  - @articles.each do |article|
+    %tr
+      %td
+        = article.title
+      %td
+        = article.text
+      %td
+        = article.created_at.strftime("%d.%m.%Y")
+      %td
+        = image_tag attachment_url(article, :image, :fill, 500, 150, format: "jpg")
+      %td
+        = image_tag attachment_url(article, :image_thumb, :fill, 500, 150, format: "jpg")
+      %td
+        = link_to 'edit', [:edit, :admin, article]

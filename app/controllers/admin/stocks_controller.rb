@@ -1,4 +1,4 @@
-class Admin::StocksController < AdminController
+class Admin::StocksController < Admin::ApplicationController
   def index
     @stocks = Stock.page params[:page]
   end

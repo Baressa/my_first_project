@@ -1,4 +1,4 @@
-class Web::ArticlesController < WebController
+class Web::ArticlesController < Web::ApplicationController
 
   def index
     @articles = Article.page params[:page]
