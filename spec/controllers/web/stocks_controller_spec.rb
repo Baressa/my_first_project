@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Web::ArticlesController, type: :controller do
+RSpec.describe Web::StocksController, type: :controller do
 
 	describe "GET #index" do
     it "respond success HTTP 200" do
@@ -15,24 +15,24 @@ RSpec.describe Web::ArticlesController, type: :controller do
     end
 
     it "loads all of the posts into @articles" do
-      article1, article2 = create(:article), create(:article)
+      stock1, stock2 = create(:stock), create(:stock)
       get :index
-      expect(assigns(:articles)).to match_array([article1, article2])
+      expect(assigns(:stocks)).to match_array([stock1, stock2])
     end
 	end
 
   describe "GET #show" do
     before {
-      @article1 = create(:article)
+      @stock1 = create(:stock)
     }
 
 		it "rassigns the requested video to the @article" do
-      get :show, id: @article1.url
-      assigns(:article).should == @article1
+      get :show, id: @stock1.url
+      assigns(:stock).should == @stock1
     end
 
 		it "render show tempalte" do
-      get :show, id: @article1
+      get :show, id: @stock1
       response.should render_template :show
     end
 	end

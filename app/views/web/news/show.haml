@@ -1,0 +1,21 @@
+%p
+	%strong Title:
+	= @new.title
+
+%p
+	%strong text:
+	= @new.text
+
+%p
+	%strong create:
+	= @new.created_at
+
+%p
+	%strong img:
+	%div
+		= image_tag attachment_url(@new, :image, format: "jpg")
+
+%p
+	%strong image_thumb:
+	%div
+		= image_tag attachment_url(@new, :image_thumb, format: "jpg")

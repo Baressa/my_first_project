@@ -1,11 +1,11 @@
-%h1 добавить статью
 
-
-= simple_form_for [:web, @article] do |f|
+= simple_form_for [:admin, @article] do |f|
 	%p
 		= f.input :title
 	%p
 		= f.input :text
+	%p
+		= f.input :url
 	%p
 		= f.attachment_field :image
 	%p

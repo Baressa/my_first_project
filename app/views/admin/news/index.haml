@@ -1,0 +1,21 @@
+%h1 Новости_Админка index.haml
+
+= link_to 'Добавить новость', controller: 'admin/news', action: 'new'
+
+%table
+  = @news.each do |new_item|
+    %tr
+      %td
+        = new_item.title
+      %td
+        = new_item.text
+      %td
+        = new_item.created_at.strftime("%d.%m.%Y")
+      %td
+        = image_tag attachment_url(new_item, :image, :fill, 500, 150, format: "jpg")
+      %td
+        = image_tag attachment_url(new_item, :image_thumb, :fill, 500, 150, format: "jpg")
+      %td
+        = link_to 'edit', [:edit, :admin, new_item]
+
+= paginate @news

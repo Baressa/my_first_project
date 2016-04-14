@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -7,11 +6,19 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  namespace :web do
+  scope :module => 'web' do
     resources :articles, only: [:index, :show]
     resources :news, only: [:index, :show]
     resources :stocks, only: [:index, :show]
   end
+
+  namespace :admin do
+    root 'welcome#index'
+    resources :articles, except: :show
+    resources :news, except: :show
+    resources :stocks, except: :show
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

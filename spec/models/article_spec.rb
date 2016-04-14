@@ -2,6 +2,7 @@ require 'rails_helper'
 # require "refile/file_double"
 
 RSpec.describe Article, type: :model do
+  
   it "allows attaching an image" do
     # post = Article.new
     #

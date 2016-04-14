@@ -1,4 +1,4 @@
-class Article < ActiveRecord::Base
+class New < ActiveRecord::Base
   extend FriendlyId
   friendly_id :url, :use => :slugged
 

@@ -1,0 +1,20 @@
+%h1 СТАТЬИ index.haml
+
+
+%table
+  = @articles.each do |article|
+    %tr
+      %td
+        = article.title
+      %td
+        = article.text
+      %td
+        = article.created_at.strftime("%d.%m.%Y")
+      %td
+        = image_tag attachment_url(article, :image, :fill, 500, 150, format: "jpg")
+      %td
+        = image_tag attachment_url(article, :image_thumb, :fill, 500, 150, format: "jpg")
+      %td
+        = link_to 'edit', [:edit, :admin, article]
+
+= paginate @articles

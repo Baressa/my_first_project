@@ -11,18 +11,48 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160412083642) do
+ActiveRecord::Schema.define(version: 20160414094546) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
-    t.string   "title"
+    t.string   "title",          null: false
     t.text     "text"
+    t.string   "slug",           null: false
+    t.string   "url",            null: false
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.string   "image_id"
     t.string   "image_thumb_id"
   end
+
+  add_index "articles", ["slug"], name: "index_articles_on_slug", unique: true, using: :btree
+
+  create_table "news", force: :cascade do |t|
+    t.string   "title",          null: false
+    t.text     "text"
+    t.string   "slug",           null: false
+    t.string   "url",            null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "image_id"
+    t.string   "image_thumb_id"
+  end
+
+  add_index "news", ["slug"], name: "index_news_on_slug", unique: true, using: :btree
+
+  create_table "stocks", force: :cascade do |t|
+    t.string   "title",          null: false
+    t.text     "text"
+    t.string   "slug",           null: false
+    t.string   "url",            null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "image_id"
+    t.string   "image_thumb_id"
+  end
+
+  add_index "stocks", ["slug"], name: "index_stocks_on_slug", unique: true, using: :btree
 
 end

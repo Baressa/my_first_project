@@ -1,1 +1,19 @@
 %h1 АКЦИИ index.haml
+
+%table
+	= @stocks.each do |stock|
+		%tr
+			%td
+				= stock.title
+			%td
+				= stock.text
+			%td
+				= stock.created_at.strftime("%d.%m.%Y")
+			%td
+				= image_tag attachment_url(stock, :image, :fill, 500, 150, format: "jpg")
+			%td
+				= image_tag attachment_url(stock, :image_thumb, :fill, 500, 150, format: "jpg")
+			%td
+				= link_to 'Show', stock
+
+= paginate @stocks

@@ -43,6 +43,7 @@ gem "factory_girl_rails"
 gem 'simplecov', :require => false, :group => :test
 gem 'simple_form'
 gem 'kaminari'
+gem 'bourbon'
 
 
 group :development, :test do

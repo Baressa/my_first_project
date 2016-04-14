@@ -1,0 +1,14 @@
+
+= simple_form_for [:admin, @stock] do |f|
+	%p
+		= f.input :title
+	%p
+		= f.input :text
+	%p
+		= f.input :url
+	%p
+		= f.attachment_field :image
+	%p
+		= f.attachment_field :image_thumb
+	%p
+		= f.button :submit
