@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
+<svg height="76" width="76" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#585858" fill="none" fill-rule="evenodd" d="M 74.5 38.25 C 74.5 58.55 58.04 75 37.75 75 C 17.45 75 1 58.55 1 38.25 C 1 17.96 17.45 1.5 37.75 1.5 C 58.04 1.5 74.5 17.96 74.5 38.25 L 74.5 38.25 Z M 74.5 38.25" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="#878787" fill="none" fill-rule="evenodd" d="M 67.26 38.25 C 67.26 54.55 54.05 67.76 37.75 67.76 C 21.45 67.76 8.24 54.55 8.24 38.25 C 8.24 21.95 21.45 8.74 37.75 8.74 C 54.05 8.74 67.26 21.95 67.26 38.25 L 67.26 38.25 Z M 67.26 38.25" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="#878787" fill="none" fill-rule="evenodd" d="M 7.66 37.21 L 11.66 37.21" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="#878787" fill="none" fill-rule="evenodd" d="M 37.16 8.71 L 37.16 13.71" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="#878787" fill="none" fill-rule="evenodd" d="M 37.16 68.71 L 37.16 64.71" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="#878787" fill="none" fill-rule="evenodd" d="M 67.66 37.21 L 62.66 37.21" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#585858" fill="none" fill-rule="evenodd" d="M 47.51 18 L 37.75 38.25 L 46.17 45.37" />
+</svg>

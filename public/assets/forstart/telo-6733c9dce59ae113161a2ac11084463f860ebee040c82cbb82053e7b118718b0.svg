@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
+<svg height="83" width="110" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 83">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="#878787" fill="none" fill-rule="evenodd" d="M 72.66 5.66 C 72.66 5.66 69.03 12.1 71.73 28.4 C 74.71 37.35 75.17 50.85 74.52 55.14 C 73.87 59.42 73.59 61.75 73.59 61.75" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="#878787" fill="none" fill-rule="evenodd" d="M 30 47.24 C 30 47.24 41.59 53.65 50.95 53.37 C 60.87 53.65 72.44 52.96 74.76 51.7" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="#878787" fill="none" fill-rule="evenodd" d="M 30.42 67.62 C 30.42 67.62 40.82 59.51 52.38 60.91 C 60.73 62.31 61.37 62.59 72.44 67.62" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#585858" fill="none" fill-rule="evenodd" d="M 38.46 24.33 C 37.22 32.63 33.91 34.06 30 47.21 C 28.39 57.95 28.37 63.01 31.89 71.93 C 33.76 76.29 35.23 79.32 35.23 81.07 C 66.14 81.07 66.56 81.1 66.56 81.1 C 66.56 81.1 73.77 66.87 74.15 60.91 C 76.75 57.74 81.97 47.49 81.97 41.39 C 81.97 29.42 73.22 7.1 72.66 5.61 C 73.03 2.07 73.8 1 73.8 1 L 29.43 1 C 29.43 1 39.09 16.45 38.46 24.33 L 38.46 24.33 Z M 38.46 24.33" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#585858" fill="none" fill-rule="evenodd" d="M 109 42 L 88 42 L 93.11 37.52" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#585858" fill="none" fill-rule="evenodd" d="M 109 42 L 88 42 L 93.31 46.48" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#585858" fill="none" fill-rule="evenodd" d="M 1 42 L 22 42 L 16.89 37.52" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#585858" fill="none" fill-rule="evenodd" d="M 1 42 L 22 42 L 16.69 46.48" />
+</svg>
